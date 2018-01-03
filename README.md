@@ -1,3 +1,6 @@
+# Example react-native-open-street-map
+
+
 #### `Run example`
 
 From project root run through cli:
