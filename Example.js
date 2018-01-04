@@ -72,13 +72,19 @@ export default class Example extends React.Component {
           hidden
         />
         <Text>Mapa</Text>
-         <MapView
+        <MapView
           style={{
             flex: 1,
-          }}
-          controllerZom={true}
-          rotateEnabled
-        />        
+          }}>
+            <MapView.Marker
+              coordinate={{
+                latitude: -18,
+                longitude: 50,
+              }}
+              title={'Titulo aqui!'}
+              description={'Descrição'}
+            />
+        </MapView>        
       </View>
     );
   }
