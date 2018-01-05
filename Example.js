@@ -68,22 +68,16 @@ export default class Example extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar
-          animated
-          hidden
+          animated          
         />
         <Text>Mapa</Text>
         <MapView
           style={{
             flex: 1,
-          }}>
-            <MapView.Marker
-              coordinate={{
-                latitude: -18,
-                longitude: 50,
-              }}
-              title={'Titulo aqui!'}
-              description={'Descrição'}
-            />
+          }}
+          zoom={10}
+          multiTouchControls={true}>
+            
         </MapView>        
       </View>
     );
