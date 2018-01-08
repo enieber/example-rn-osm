@@ -76,9 +76,28 @@ export default class Example extends React.Component {
             flex: 1,
           }}
           zoom={10}
-          multiTouchControls={true}>
-            
-        </MapView>        
+          multiTouchControls={true}
+          router={{
+            titleA: 'Minha localização',
+            descriptionA: 'teste',
+            titleB: 'Cliente',
+            descriptionB: 'Endereço do Cliente',      
+            coordinates: [
+                {
+                  latitude: -11.8604538,
+                  longitude: -55.5217464
+                },
+                {
+                  latitude: -11.8602939,
+                  longitude: -55.5216033
+                },
+                {
+                  latitude: -11.8602939,
+                  longitude: -55.5216033
+                }
+              ]
+          }}
+          />
       </View>
     );
   }
